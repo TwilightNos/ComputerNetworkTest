@@ -3,7 +3,7 @@ from socket import *
 
 if __name__ == '__main__':
     # 必须是localhost（为什么？）
-    serverName = 'localhost'
+    serverName = '54.227.184.239'
     # serverPort 一定要和server的serverPort数字一致，否则无法建立连接
     serverPort = 11000
     #AF_INET代表ipv4协议，SOCK_STREAM代表TCP协议

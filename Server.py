@@ -7,7 +7,7 @@ if __name__ == '__main__':
 
     listenSocket = socket(AF_INET, SOCK_STREAM)
     # ‘0.0.0.0’ 或者‘’都代表不限连接端口
-    listenSocket.bind(('0.0.0.0', serverPort))
+    listenSocket.bind(('', serverPort))
     # listen中的数字表示最多能够接受几个等待中的服务
     listenSocket.listen(1)
     print('server started')
