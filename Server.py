@@ -18,6 +18,8 @@ if __name__ == '__main__':
         print('cycle start')
         # 从客户端接收信息
         message = connectionSocket.recv(2048)
+        if not message:
+            break
         print('message received')
         # 解码接收到的信息并将其变成大写
         capitalizedSentence = message.decode().upper()
