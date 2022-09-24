@@ -10,7 +10,7 @@ if __name__ == '__main__':
     listenSocket.bind(('', serverPort))
     # listen中的数字表示最多能够接受几个等待中的服务
     listenSocket.listen(1)
-    print('server started')
+    print('server started at serverPort:'+str(serverPort))
     # True代表无限循环，直到服务器关闭
     connectionSocket, addr = listenSocket.accept()
     print('connected to client')
